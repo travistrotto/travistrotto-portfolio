@@ -1,5 +1,6 @@
 # travistrotto-front-end-portfolio
 Travis Trotto's Front End Portfolio Website
+
 Programmed in HTML5, CSS & JavaScript; Hosted on Netlify
 
 ## https://travistrotto.netlify.app/
