@@ -1,4 +1,4 @@
-# travistrotto-portfolio-site
+# travistrotto-portfolio
 Travis Trotto's Front End Portfolio Website
 
 Programmed in HTML5, CSS & JavaScript; Hosted on Netlify
