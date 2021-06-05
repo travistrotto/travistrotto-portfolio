@@ -1,0 +1,594 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{	
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	box-sizing: border-box;
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* yellow
+:root {
+  --bgcolor: #6593A6;
+  --lightbg: #58595B;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #F2F2F2;
+  --highlight: #F2CF63;
+  --tint1: rgba(242,207,99,0.1);
+  --tint2: rgba(242,207,99,0.2);
+  --tint9: rgba(242,207,99,0.9);
+}
+*/
+
+
+:root {
+  --bgcolor: #353640;
+  --lightbg: #353640;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #D5D9FF;
+  --white: #BFC3E5;
+  --highlight: #F2CF63;
+  --tint1: rgba(242,207,99,0.1);
+  --tint2: rgba(242,207,99,0.2);
+  --tint9: rgba(242,207,99,0.9);
+}
+
+
+/* blue/green
+:root {
+  --bgcolor: #1e90ff;
+  --lightbg: #112240;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #ffffff;
+  --highlight: #64ffda;
+  --tint1: rgba(100,255,218,0.1);
+  --tint2: rgba(100,255,218,0.2);
+  --tint9: rgba(100,255,218,0.9);
+}
+
+*/
+
+
+/* Site Background Color */
+body{
+	background: var(--lightbg);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--highlight);
+}
+
+
+/*==========================================
+    Top Nav 
+  ==========================================*/
+.topnav {
+  overflow: hidden;
+  margin-top: 36px;
+  margin-right: 48px;
+  margin-left: 48px;
+
+
+  /*
+  border: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  */
+}
+
+.topnav p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  float: left;
+  text-align: center;
+  color: var(--slate);
+  text-decoration: none;
+
+}
+
+.invert {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  float: right;
+  display: block;
+  color: #ccc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  float: right;
+  display: block;
+  color: var(--slate);
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+
+
+  border-radius: 8px;
+}
+
+.topnav a:hover {
+  color: var(--highlight);
+}
+
+#invert:hover {
+  background-color: var(--tint1);
+
+}
+
+.topnav a.active {
+  /* background-color: #58FFC5; */
+  color: var(--highlight);
+  font-weight: 400;
+
+  border: 2px dashed;
+  border-radius: 2px;
+  
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.logo-img {
+  display: float;
+  float: left;
+  position: fixed;
+  pointer-events: none;
+}
+
+
+/*==========================================
+  Sidenav
+  ==========================================*/
+.sidenav {
+  height: 100%;
+  width: 48px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--light-slate);
+  display: block;
+  top: 0;
+
+}
+
+.sidenav a:hover {
+ color: var(--tint9);
+  
+}
+
+.sm {
+  position: absolute;
+  /*
+  padding-bottom: 346px;
+  */
+  bottom: 0;
+
+}
+
+#arrow {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+#arrow:hover {
+  top: -10px;
+}
+
+.vl {
+  margin-left: 27px;
+  border-left: 2px solid;
+  height: 333px;
+  /**/
+  color: var(--light-slate);
+}
+
+/*==========================================
+  About Me
+  ==========================================*/
+.about {
+  position: relative;
+  margin-left: 5%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  max-width: 100%;
+}
+
+.about p {
+
+}
+
+.center-content {
+
+  margin-left: 23%;
+  max-width: 60%;
+
+
+}
+
+
+.mini {
+  max-width:65%;
+}
+/* Text Styles 
+  =========================================*/
+#t1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  color: var(--highlight);
+  letter-spacing: 1px;
+}
+
+#t2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 112px;
+  color: var(--lightest-slate);
+
+}
+
+#t3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--slate);
+}
+#t4 {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--slate);
+}
+#t5 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  color: var(--highlight);
+  font-size: 16px;
+}
+
+.contact-button {
+  margin-top: 24px;
+  background-color: var(--lightbg);
+  color: var(--highlight);
+  font-weight: 400;
+  border: 2px dashed;
+
+}
+
+.contact-button:hover {
+  background-color: var(--tint1);
+}
+
+
+.contact-button p {
+  padding: 8px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  color: var(--highlight);
+  font-size: 14px;
+
+
+}
+/*==========================================
+    Bio
+  ==========================================*/
+.bio {
+  display: table-cell;
+
+
+}
+
+.bio-text {
+ font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+   color: var(--white);
+  padding-top:48px;
+  padding-bottom:12px;
+  display: block;
+  float: left;
+  width:65%;
+}
+
+.bio-img {
+  float: right;
+  display: block;
+  width: 33%;
+  margin-top: 36px;
+  box-shadow: 10px 10px var(--highlight);
+
+}
+ .bio-img2 {
+    display: none;
+    margin-left:15%;
+  }
+
+/*==========================================
+    Jobs
+  ==========================================*/
+.title {
+  margin-left:16px;
+  margin-bottom: 8px;
+}
+.work-container{
+  display: block;
+  position: relative;
+
+}
+.tab {
+  float: left;
+  /*border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;*/
+  width: 30%;
+  height: 300px;
+
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  margin-top: 4px;
+  overflow: HIDDEN;
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 12px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--tint1);
+  border: 2px dashed;
+  border-color: var(--highlight);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: var(--tint1);
+  border: 2px dashed;
+   border-color: var(--highlight);
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 12px 14px;
+  /*border-right: 1px solid #ccc;*/
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  color: var(--slate);
+
+  border-right: 2px dashed;
+  border-color: var(--highlight);
+
+}
+
+.tabcontent h3 {
+  color: var(--lightest-slate);
+
+}
+
+.description {
+  padding-top: 15px;
+
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*==========================================
+  Projects
+  ==========================================*/
+.projects {
+  margin-top: 48px;
+  float: right;
+  position: float;
+  
+  width: 100%;
+  display: inline;
+}
+
+.project {
+  overflow: hidden;
+  border-radius: 2px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  height:275px;
+  width: 100%;
+  background-color: var(--tint1);
+
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.project-content{
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: var(--slate);
+}
+
+.preview {
+  display: block;
+  padding-left:40px;
+  padding-right:40px;
+  height:275px;
+  width: 250px;
+
+  display: table-cell;
+  vertical-align: middle;
+  /* border-right: 1px solid #ccc; */
+  text-align: center;
+  color: var(--slate);
+}
+
+.project:hover{
+  background-color: var(--tint2);
+  top: -10px;
+  color: var(--slate);
+}
+.space {
+  margin-top: 30px;
+  margin-bottom: 112px;
+  color: var(--highlight);
+}
+
+.arrow-down {
+  margin: auto;
+  width: 2%;
+
+
+}
+
+
+/*================
+ *    Contact
+ *================
+ */
+
+.contact-btm {
+  padding-left: 12%;
+  margin: auto;
+  width: 45%;
+
+}
+
+.contact-btm button {
+  margin-left: 41px;
+}
+
+/*================
+ *    Scaling
+ *================
+ */
+
+@media screen and (max-width: 400px) {
+  .work-container {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .contact-btm {
+  margin: auto;
+  padding-right: 15%;
+  }
+  .contact-btm h3{
+  display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+
+  }
+  .contact-btm {
+  margin: 0;
+  padding-right: 15%;
+  }
+  .contact-btm h3{
+  display: none;
+  }
+  .bio {
+    margin-left: 76px;
+  }
+  .bio-text{
+    text-align: center;
+  }
+  .bio-img {
+    display: none;
+  }
+  .bio-img2 {
+    display: block;
+    width:33%;
+    border-radius: 86px;
+
+  }
+
+
+}
+ 
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<script src="https://kit.fontawesome.com/11c986c8ed.js"></script>
+<script src="tabs.js"></script>
+<script src="scroll.js"></script>
+<title>travistrotto-front-end-portfolio</title>
+
+  <!--
+    * @Author: Travis Trotto
+    * Last Edited: 05/03/2021
+    *
+  -->
+
+</head>
+<body>
+
+
+<!-- Sidenav -->
+<div class="sidenav">
+  <div class ="sm">
+    <div id="arrow"><a href="https://www.linkedin.com/in/travistrotto/"><i class="fab fa-linkedin"></i></a></div>
+    <div id="arrow"><a href="https://github.com/travistrotto"><i class="fab fa-github"></i></a></div>
+    <div id="arrow"><a href="https://www.youtube.com/channel/UCvVsIlHp5JnKvUb8tvJLOoQ"><i class="fab fa-youtube"></i></a></div>
+    <div id="arrow"><a href="https://drive.google.com/drive/folders/1DgfI4p-N_CVdPjyVo9V2hBab6_-d-329?usp=sharing"><i class="fab fa-google-drive"></i></a></div>
+    <div class="vl"></div>
+  </div>
+</div>
+
+<!-- Topnav -->
+<div class="topnav" id="myTopnav">
+  <!--<p>Travis Trotto</p>-->
+  <div class="logo-img">
+    <img src="img/logo_y.png" style="width: 7%;">
+  </div>
+  <a href="https://drive.google.com/file/d/1dIBahhI2TOztSyVpRbVAYuWo86ope04D/view?usp=sharing" class="active" id="invert">Resume</a>
+    <a href="#contact-section" class="menuText">Contact</a>
+    <a href="#project-section">Projects</a>
+    <a href="#work-section">Experience</a>
+    <a href="#about-section">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+</div>
+
+<div class="center-content">
+  <!-- About -->
+  <div class="about">
+    <p id="t1" style="margin-left: 6px">Hi, my name is</p>
+    <p id="t2">Travis Trotto,</p>
+    <p id="t3" style="margin-left: 8px">I'm a Front End Developer.</p>
+    <br>
+    <p id="t4" class="mini" style="margin-left: 8px">I'm a Senior Computer Science Student at the <a href="">City University of New York, College of Staten Island</a> who specializes in Front-End Development, User Experience & Graphic Design.</p>
+    <br>
+    <p id="t4" class="mini" style="margin-left: 8px">I'm currently looking for relevant work opportunities.</p>
+    <button class="contact-button"><a href="mailto:travis.trotto@gmail.com"><p>Contact Me</p></a></button>
+  </div>
+
+  <!-- ARROW + SCROLL SPACE/NEXT CONTENT/ -->   
+  <div class="space">
+    <div class="arrow-down"><i class="fas fa-sort-down"></i></div>
+  </div>
+
+  <div class="bio" id="about-section">
+    <h3 class="title" id="t4">- About Me </h3>
+    <img src="img/me2.jpg" class="bio-img2">
+    <p class="bio-text">&nbsp;&nbsp;&nbsp;&nbsp;Hello! My name is Travis and I've always had a passion for designing. My interest for design met web-design while attending technical career highschool as a Graphic Design Major. My instructor showed me how to design websites on wix.com and I was immersed in a new world of design.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;My creative ideas quickly grew outside the limitations of wix and other drag-and-drop website builders, so I learned to code myself by watching videos & taking every HTML, CSS and Javascript class Codecademy offered. By the time I could consider myself a Computer Science Major at CUNY College of Staten Island, I already managed a few sites!</p>
+    <img src="img/me2.jpg" class="bio-img">
+  </div>
+  <div class="row">
+          <div class="column">
+            <h4 id="t4">Languages:</h4>
+            <a>HTML5 + CSS & JavaScript, PHP, SQL, C#, C++, Python</a>
+          </div>
+          <div class="column">
+            <h4 id="t4">Technologies:</h4>
+            <a>Wordpress, Spyder, Xcode, Git/GitHub, Visual Studio, Adobe Photoshop + Illustrator + InDesign + Dreamweaver</a>
+          </div>
+        </div>
+
+  <!-- ARROW + SCROLL SPACE/NEXT CONTENT/ -->    
+  <div class="space">
+    <div class="arrow-down"><i class="fas fa-sort-down"></i></div>
+  </div>
+  
+    <!-- Jobs -->
+  <div class="work-container" id="work-section">
+    <h3 class="title" id="t4">- Work Experience</h3>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'j1')" id="defaultOpen"><p id="t5">Front-End Web Developer</p></button>
+      <button class="tablinks" onclick="openCity(event, 'j2')"><p id="t5">Graphic Designer</p></button>
+      <!--
+      <button class="tablinks" onclick="openCity(event, 'j3')"><p id="t5">Web Designer</p></button>
+      <button class="tablinks" onclick="openCity(event, 'j4')"><p id="t5">Student Software Engineer</p></button>
+      <button class="tablinks" onclick="openCity(event, 'j5')"><p id="t5">Student We</p></button>
+      -->
+  </div>
+
+  <div id="j1" class="tabcontent">
+    <h3>Front-End Web Developer</h3>
+    <h3 id="t5"><a>@ Lifestyles For The Disabled</a></h3>
+      <div class="description">
+        <p>• Managed the front-end of the company websites, hosted on Wordpress.</p>
+        <p>• Designed web stores for customers on a walk in basis, hosted on Inksoft.</p>
+        <p>• Created in-page graphics in Adobe Photoshop & Illustrator.</p>
+        <p>• Worked with other companies for APIs, database management, and payment gateways.</p>
+        <br>
+        <div class="row">
+          <div class="column">
+            <h4>Languages:</h4>
+            <a>HTML5 + CSS</a>
+          </div>
+          <div class="column">
+            <h4>Technologies:</h4>
+            <a>Wordpress, Inksoft, Photoshop, Illustrator, InDesign</a>
+          </div>
+        </div>
+        <!--
+        <div class="language-container">
+          <div class="language-element1">
+            <p>Languages Used:</p>
+            <a>HTML5 + CSS</a>
+          </div>
+          <div class="language-element2">
+            <p>Languages Used:</p>
+            <a>HTML5 + CSS</a>
+          </div> 
+        </div>
+         -->
+      </div>
+  </div>
+
+  <div id="j2" class="tabcontent">
+   <h3>Graphic Designer</h3>
+    <h3 id="t5"><a>@ Teestyles Screenprinting & Embroidery</a></h3>
+      <div class="description">
+          <p>• Designed custom Graphics to be printed on apparel.</p>
+          <p>• Worked one-on-one with customers to create and agree on a mock-up preview of the design before printing.</p>
+          <p>• Adobe Cerified Associate.</p>
+        <br>
+        <div class="row">
+            <h4>Technologies:</h4>
+            <a>Adobe Photoshop, Illustrator, InDesign, Inkscape, CorelDRAW</a>    
+        </div>
+        <!--
+        <div class="language-container">
+          <div class="language-element1">
+            <p>Languages Used:</p>
+            <a>HTML5 + CSS</a>
+          </div>
+          <div class="language-element2">
+            <p>Languages Used:</p>
+            <a>HTML5 + CSS</a>
+          </div> 
+        </div>
+         -->
+      </div>
+  </div>
+
+  <div id="j3" class="tabcontent">
+    <h3>Graphic Designer</h3>
+    <h3 id="t5">@ Teestyles Screenprinting & Embroidery</h3>
+      <div class="description">
+            <p>• Design Vector and Raster Graphics such as Logos, Posters, Postcards and Illustrations for print and web use.</p>
+            <p>• Consider printing limitations when designing.</p>
+            <p>• Adobe Cerified Associate.</p>
+      </div>
+  </div>
+
+  <div id="j4" class="tabcontent">
+    <h3>Student Software Engineer</h3>
+    <h3 id="t5">Software Engineering Course <a>@ CUNY College of Staten Island</a></h3>
+      <div class="description">
+        <p>• Led Development</p>
+        <p>• Designed web stores for customers on a walk in basis, hosted on Inksoft.</p>
+        <p>• Created in-page graphics in Adobe Photoshop & Illustrator.</p>
+        <p>• Worked with other companies for APIs, database management, and payment gateways.</p>
+        <br>
+        <div class="row">
+          <div class="column">
+            <h4>Languages:</h4>
+            <a>HTML5 + CSS</a>
+          </div>
+          <div class="column">
+            <h4>Technologies:</h4>
+            <a>Wordpress, Inksoft, Photoshop, Illustrator, InDesign</a>
+          </div>
+        </div>
+        <!--
+        <div class="language-container">
+          <div class="language-element1">
+            <p>Languages Used:</p>
+            <a>HTML5 + CSS</a>
+          </div>
+          <div class="language-element2">
+            <p>Languages Used:</p>
+            <a>HTML5 + CSS</a>
+          </div> 
+        </div>
+         -->
+      </div>
+  </div>
+
+
+  </div>
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+  <!-- ARROW + SCROLL SPACE/NEXT CONTENT/ -->    
+  <div class="space">
+    <div class="arrow-down"><i class="fas fa-sort-down"></i></div>
+  </div>
+  <!-- Projects -->
+
+  <div class="projects" id="project-section">
+
+  <div class="space"></div>
+  <h3 class="title" id="t4">- Projects</h3>
+      <div class="project">
+          <div class="preview">
+          <img src="img/work4.png" style="width:100%;">
+          <h4><a href="">View Site</a></h4>
+          </div>
+          <div class="project-content">
+            <h3 style="text-align: center" id="t1">The Fragrance Club</h3>
+            <p style="color: var(--white);">A monthly-based subscription service with recurring billing, adjustable plans, secure log-in & payment gateways.</p>
+            <p><a>Languages Used:</a> HTML, CSS, JavaScript, PHP & Liquid.</p><p><a>Hosted on:</a> Shopify.</p>
+            <br><a href="https://www.thefragrance.club/"><p id="t1">https://www.thefragrance.club/</p></a>       
+          </div>
+      </div>
+
+      <div class="project">
+          <div class="preview">
+          <img src="img/work5.png" style="width:100%;">
+          <h4><a href="">View Site</a></h4>
+          </div>
+          <div class="project-content">
+            <h3 style="text-align: center" id="t1">Staten Island Zoo</h3>
+            <p style="color: var(--white);">An online storefront showcasing features of Database management through User Interface. Account Management, Product Inventory, Stock, Coupons & Sales can all be controlled from the website's User Interface that affect real changes in the offsite SQL Database</p>
+            <p><a>Languages Used:</a> HTML, CSS, JavaScript, PHP & Liquid.</p><p> <a>Hosted on:</a> Shopify.</p>
+            <br><a href="https://shop.teestyles.com/staten_island_zoo/"><p id="t1">https://shop.teestyles.com/staten_island_zoo</p></a>       
+          </div>
+      </div>
+
+
+      <div class="project">
+          <div class="preview">
+          <img src="img/work3.png" style="width:100%;">
+          <h4><a href="">Preview</a></h4>
+          </div>
+          <div class="project-content">
+            <h3 style="text-align: center" id="t1">HouseBank</h3>
+            <p style="color: var(--white);">A personal finance that uses SQL database management for account login and balance information.</p>
+            <p><a>Languages Used:</a> HTML, CSS & PHP </p><p><a>Hosted on:</a> CUNY CSI Web Server</p>
+            <br><a href=""><p id="t1"></p></a>       
+          </div>
+      </div>
+
+      <div class="project">
+          <div class="preview">
+          <img src="img/work2.jpg" style="width:100%;">
+          <h4><a href="">Preview</a></h4>
+          </div>
+          <div class="project-content">
+            <h3 style="text-align: center" id="t1">K-Daysi</h3>
+            <p style="color: var(--white);">An online storefront showcasing features of Database management through User Interface. Account Management, Product Inventory, Stock, Coupons & Sales can all be controlled from the website's User Interface that affect real changes in the offsite SQL Database.</p>
+            <p><a>Languages Used:</a> HTML, CSS, & PHP</p><p> <a>Hosted on:</a> CUNY CSI Web Server</p>
+            <br><a href="https://www.thefragrance.club/"><p id="t1"></p></a>       
+          </div>
+      </div>
+
+
+
+      <!-- ARROW + SCROLL SPACE/NEXT CONTENT/ -->    
+      <div class="space">
+        <div class="arrow-down"><i class="fas fa-sort-down"></i></div>
+      </div>
+    
+    
+  </div>   
+
+  <div class="contact-btm">
+    <h3 class="title" id="t4">- Contact Me</h3>
+    <button class="contact-button"><a href="mailto:travis.trotto@gmail.com"><p>Contact Me</p></a></button>
+  </div>
+
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+
+   <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+
+  <!-- Center Content -->
+</div>
+
+
+
+<!--
+<div style="padding-left:48px">
+  <h2>Senior Computer Science Student</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+-->
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+</body>
+</html>
